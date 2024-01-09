@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>User Landing Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <div class="container">
+      <h1>Welcome <span id="username">User</span>!</h1>
+      <div>
+        <p>Your focus for the day: <span id="focus"></span></p>
+      </div>
+      <p>Quote: <span id="quote"></span></p>
+      <hr />
+      <button onclick="showInput()" id="settings">Edit Settings</button>
+      <div id="inputSection" style="display: none">
+        <label for="name">Name:</label>
+        <input type="text" id="name" />
+        <label for="focusInput">Focus for the day:</label>
+        <input type="text" id="focusInput" />
+        <label for="backgroundSelect">Background:</label>
+        <select id="backgroundSelect">
+          <option value="mountains.jpg">Mountain view</option>
+          <option value="audi.jpg">Audi R8</option>
+        </select>
+        <button onclick="saveSettings()">Save Settings</button>
+        <button onclick="generateQuote()">Generate Quote</button>
+      </div>
+    </div>
+  </body>
+</html>
